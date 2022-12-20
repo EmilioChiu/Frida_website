@@ -1,0 +1,102 @@
+/* general */
+body {
+    color: #FFFCEC !important;
+}
+
+/* top */
+#top-container{
+    padding: 150px 0;
+    background-color: #94B4A4;
+}
+
+#title-div {
+    font-family: 'Cinzel', serif;
+    margin: auto;
+    width: 50%;
+}
+
+#title {
+    font-size: 3.5em;
+    display: block;
+
+    position: relative;
+    animation: slide-in 2s ease-out;
+}
+
+/* left slide-in animation */
+@keyframes slide-in {
+    0% {
+	opacity: 0;
+	left: -500px;
+    }
+
+    100% {
+	opacity: 1;
+	left: 0;
+    }
+}
+
+#description {
+    font-size: 2.5em;
+    text-decoration: underline;
+
+    position: relative;
+    animation-delay: 2s;
+    animation: fade-in 3.5s ease-out;
+}
+
+/* fade-in animation */
+@keyframes fade-in {
+    0% {
+	opacity: 0;
+    }
+
+    50% {
+	opacity: 0;
+    }
+
+    100% {
+	opacity: 1;
+    }
+}
+
+#profile {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+/* mid-container */
+#mid-container {
+    padding: 100px 0;
+    background-color: #E5C5B5;
+}
+
+.general-description {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#therapies {
+    margin: auto;
+    width: 70%;
+}
+
+.subtitle {
+    font-family: 'Cinzel', serif;
+}
+
+.description {
+    padding: 45px 0;
+}
+
+.therapy-img {
+    width: 100%;
+}
+
+/* footer */
+#footer {
+    background-color: #D2F5E3;
+    padding: 45px;
+}
