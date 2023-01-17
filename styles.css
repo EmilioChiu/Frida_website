@@ -3,6 +3,13 @@ body {
     color: #FFFCEC !important;
 }
 
+hr{
+    color: #FFFCEC !important;
+    width: 60%;
+    margin: auto;
+    border-top: 1.75px solid;
+}
+
 /* top */
 #top-container{
     padding: 150px 0;
@@ -97,6 +104,6 @@ body {
 
 /* footer */
 #footer {
-    background-color: #D2F5E3;
+    background-color: #94B4A4;
     padding: 45px;
 }
