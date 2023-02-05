@@ -5,9 +5,28 @@ body {
 
 hr{
     color: #FFFCEC !important;
-    width: 60%;
-    margin: auto;
-    border-top: 1.75px solid;
+    height: 2px;
+}
+
+nav {
+    background: #94B4A4;
+}
+
+.navbar a:hover{
+    --bs-dropdown-border-color: none;
+    --bs-dropdown-link-hover-bg: none;
+}
+
+.link {
+    color: #FFFCEC !important;
+}
+
+.link:hover{
+    color: #E5C5B5 !important;
+}
+
+.dropdown-menu {
+    background:transparent;
 }
 
 /* top */
@@ -44,10 +63,11 @@ hr{
 }
 
 #description {
-    font-size: 2.5em;
-    text-decoration: underline;
-
     position: relative;
+    padding: 0;
+}
+
+.fade-in {
     animation-delay: 2s;
     animation: fade-in 3.5s ease-out;
 }
@@ -73,6 +93,10 @@ hr{
     border-radius: 50%;
 }
 
+.hide {
+    display: none;
+}
+
 /* mid-container */
 #mid-container {
     padding: 100px 0;
@@ -95,7 +119,7 @@ hr{
 }
 
 .description {
-    padding: 45px 0;
+    padding: 25px 0;
 }
 
 .therapy-img {

@@ -20,27 +20,35 @@
 	<!-- font awsome -->
 	<script src="https://kit.fontawesome.com/aca167ccde.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
+
 	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg bg-light">
+	<nav class="navbar navbar-expand-lg">
 	    <div class="container-fluid">
-		<a class="navbar-brand" href="#">Frida A. Chiu</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<a class="navbar-brand link" href="#top-container">Frida A. Chiu</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-		    <ul class="navbar-nav">
-			<li class="nav-item">
-			    <a class="nav-link" href="#">Terapia1</a>
+		<div class="" id="navbarSupportedContent">
+		    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+			<li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				Terapias
+			    </a>
+			    <ul class="dropdown-menu">
+				<li><a class="dropdown-item link" href="#des">Descripción</a></li>
+				<li><a class="dropdown-item link" href="#cmi">Consulta médica integral</a></li>
+				<li><a class="dropdown-item link" href="#acupuntura">Acupuntura</a></li>
+				<li><a class="dropdown-item link" href="#fa-acupuntura">Farmaco-acupuntura</a></li>
+				<li><a class="dropdown-item link" href="#biomagnetismo">Biomagnetismo</a></li>
+				<li><a class="dropdown-item link" href="#bioenergetica">Bioenergética</a></li>
+				<li><a class="dropdown-item link" href="#masoterapia">Masoterapia</a></li>
+				<li><a class="dropdown-item link" href="#reiki">Reiki</a></li>
+			    </ul>
 			</li>
 			<li class="nav-item">
-			    <a class="nav-link" href="#">Terapia2</a>
-			</li>
-			<li class="nav-item">
-			    <a class="nav-link" href="#">Terapia3</a>
-			</li>
-			<li class="nav-item">
-			    <a class="nav-link" href="#">Agendar Cita!</a>
+			    <a class="nav-link link" href="#footer">Agenda tú Cita!</a>
 			</li>
 		    </ul>
 		</div>
@@ -53,7 +61,17 @@
 		<div class="row">
 		    <div class="col-8">
 			<h1 id="title">FRIDA A. CHIU</h1>
-			<h3 id="description">Homeopata...</h3>
+			<button id="description" type="button" class="btn btn-link link">
+			    <h1 class="fade-in">Homeopata...</h1>
+			</button>
+			<p class="hide" id="bio">
+			Mi formación es el de Médico Cirujano con cédula de 
+			licenciatura 4481757 y con especialidad en Acupuntura 
+			y Fitoterapia con cédula 5721043. Tengo más de 25 años 
+			de experiencia ejerciendo una medicina integrativa, 
+			conjuntando el conocimiento científico con la sabiduría 
+			de las medicinas ancestrales.
+			</p>
 		    </div>
 		    <div class="col-4">
 			<img id="profile" src="images/istockphoto-1311084168-170667a.jpg" alt=""> 
@@ -62,9 +80,10 @@
 	    </div>
 	</div>
 
-	<!-- top-container -->
+	<!-- mid-container -->
 	<div id="mid-container">
-	    <div class="general-description">
+	    <!-- general-description -->
+	    <div class="general-description" id="des">
 		<div>
 		    <h1 class="subtitle">TERAPIAS</h1>
 		</div>
@@ -79,9 +98,9 @@
 		<hr>
 	    </div>
 
-
+	    <!-- therapy-descriptions -->
 	    <div id="therapies"> 
-		<div class="row description">
+		<div class="row description" id="cmi">
 		    <div class="col-6">
 			<img class="therapy-img" src="images/imanes.jpg" alt="imanes-pic">
 		    </div>
@@ -99,7 +118,7 @@
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="acupuntura">
 		    <div class="col-6">
 			<h1 class="subtitle">ACUPUNTURA</h1>
 			<p>
@@ -113,7 +132,7 @@
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="fa-acupuntura">
 		    <div class="col-6">
 			<img class="therapy-img" src="images/aromaterapia.webp" alt="imanes-pic">
 		    </div>
@@ -126,7 +145,7 @@
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="fitoterapia">
 		    <div class="col-6">
 			<h1 class="subtitle">FITOTERAPIA O HERBOLARIA</h1>
 			<p>consiste en la utilización de plantas medicinales 
@@ -139,7 +158,7 @@
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="biomagnetismo">
 		    <div class="col-6">
 			<img class="therapy-img" src="images/hojas.jpeg" alt="imanes-pic">
 		    </div>
@@ -155,7 +174,7 @@
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="bioenergetica">
 		    <div class="col-6">
 			<h1 class="subtitle">BIOENERGÉTICA</h1>
 			<p>Se refiere a las interacciones de la energía 
@@ -173,32 +192,29 @@
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="masoterapia">
 		    <div class="col-6">
 			<img class="therapy-img" src="images/aromaterapia.webp" alt="imanes-pic">
 		    </div>
 		    <div class="col-6">
 			<h1 class="subtitle">MASOTERAPIA</h1>
-			<p>son masajes terapéuticos con técnicas  diversas.
+			<p>Masajes terapéuticos con técnicas  diversas.
 			<br>
 			<br>
 			Reflexología podal: Tomando en cuenta que en nuestros 
 			pies se representa todo el cuerpo, y masajeando ciertas 
-			zonas podemos tratar ese órgano afectado 
-			<br>
+			zonas podemos tratar ese órgano afectado.
 			<br>
 			Piedras calientes: masaje corporal con piedras de obsidiana. 
 			<br>
-			<br>
 			Masajes con Bambú: masaje relajante y descontracturante con palos de bambú. 
-			<br>
 			<br>
 			Masaje Reductivo: ayuda a eliminar el cúmulo de grasa 
 			localizada y estilizar el contorno de la figura. </p>
 		    </div>
 		</div>
 
-		<div class="row description">
+		<div class="row description" id="reiki">
 		    <div class="col-6">
 			<h1 class="subtitle">REIKI</h1>
 			<p>Es una terapia bioenergética donde se utiliza 
@@ -217,37 +233,24 @@
 	<!-- footer -->
 	<div id="footer">
 	    <div class="general-description">
-
 		<h1 class="subtitle">AGENDA TU CITA</h1>
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-		    <i class="fa-brands fa-whatsapp"></i> WhatsApp 
-		</button>
 
-		<!-- Modal -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		    <div class="modal-dialog">
-			<div class="modal-content">
-			    <div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			    </div>
-			    <div class="modal-body">
-				<h1>holaaa
-				    jkl
-				</h1>
-			    </div>
-			    <div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-success">Save changes</button>
-			    </div>
-			</div>
-		    </div>
-		</div>
+		<!-- Email Button  -->
+		<a target="_blank" rel="noopener noreferrer" class="btn btn-success" 
+	           href="mailto:espipinosachiuemilio@outlook.es">
+		    <i class="fa-solid fa-envelope"></i> Correo
+		</a>
+
+		<!-- Whatsapp Button  -->
+		<a target="_blank" rel="noopener noreferrer" class="btn btn-success" 
+	           href="https://wa.me/525630400917">
+		    <i class="fa-brands fa-whatsapp"></i> whatsapp
+		</a>
 	    </div>
 	</div>
 
-
+	<!-- js script -->
+	<script type="text/javascript" src="script.js"></script>
 	<!-- bootsrap script -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </body>
