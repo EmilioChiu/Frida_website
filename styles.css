@@ -1,10 +1,10 @@
 /* general */
 body {
-    color: #FFFCEC !important;
+    color: #FFFF !important;
 }
 
 hr{
-    color: #FFFCEC !important;
+    color: #FFFF !important;
     height: 2px;
 }
 
@@ -18,7 +18,7 @@ nav {
 }
 
 .link {
-    color: #FFFCEC !important;
+    color: #FFFF !important;
 }
 
 .link:hover{
