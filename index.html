@@ -24,19 +24,19 @@
     <body>
 
 	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg">
+	<nav class="navbar navbar-dark navbar-expand-lg">
 	    <div class="container-fluid">
 		<a class="navbar-brand link" href="#top-container">Dra. Frida A. Chiu</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		</button>
-		<div class="" id="navbarSupportedContent">
-		    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 			<li class="nav-item dropdown">
 			    <a class="nav-link dropdown-toggle link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 				Terapias
 			    </a>
-			    <ul class="dropdown-menu">
+			    <ul class="dropdown-menu dropdown-menu-end">
 				<li><a class="dropdown-item link" href="#des">Descripción</a></li>
 				<li><a class="dropdown-item link" href="#cmi">Consulta médica integral</a></li>
 				<li><a class="dropdown-item link" href="#acupuntura">Acupuntura</a></li>
@@ -57,23 +57,19 @@
 
 	<!-- top-container -->
 	<div id="top-container">
-	    <div id="title-div">
-		<div class="row">
-		    <div class="col-8">
-			<h1 id="title">Dra. FRIDA A. CHIU</h1>
-			<p class="fade-in" id="bio">
-			Mi formación es el de Médico Cirujano con cédula de 
-			licenciatura 4481757 y con especialidad en Acupuntura 
-			y Fitoterapia con cédula 5721043. Tengo más de 25 años 
-			de experiencia ejerciendo una medicina integrativa, 
-			conjuntando el conocimiento científico con la sabiduría 
-			de las medicinas ancestrales.
-			</p>
-		    </div>
-		    <div class="col-4">
-			<img id="profile" src="images/istockphoto-1311084168-170667a.jpg" alt=""> 
-		    </div>
-		</div>
+	    <div id="title-div" class="clearfix">
+		<img id="profile" class="col-md-6 float-md-end mb-4 ms-md-4" 
+		src="images/Promo-Facebook-Facebook instant articles.jpeg" alt=""> 
+
+		<h1 id="title">Dra. FRIDA A. CHIU</h1>
+		<p class="fade-in" id="bio">
+		Mi formación es el de Médico Cirujano con cédula de 
+		licenciatura 4481757 y con especialidad en Acupuntura 
+		y Fitoterapia con cédula 5721043. Tengo más de 25 años 
+		de experiencia ejerciendo una medicina integrativa, 
+		conjuntando el conocimiento científico con la sabiduría 
+		de las medicinas ancestrales.
+		</p>
 	    </div>
 	</div>
 
@@ -97,69 +93,49 @@
 
 	    <!-- therapy-descriptions -->
 	    <div id="therapies"> 
-		<div class="row description" id="cmi">
-		    <div class="col-6">
-			<img class="therapy-img" src="images/imanes.jpg" alt="imanes-pic">
-		    </div>
-		    <div class="col-6">
-			<h1 class="subtitle">CONSULTA MÉDICA INTEGRAL</h1>
-			<p>
-			Es la consulta de primera vez donde se lleva a cabo una historia.
-			<br>
-			<br>
-			clínica completa utilizando métodos diagnósticos 
-			convencionales y alternativos como el escaneo 
-			bioenergético para poder integrar un diagnóstico y
-			ofrecer un plan de tratamiento adecuado siempre al paciente. 
-			</p>
-		    </div>
+		<div class="clearfix description" id="cmi">
+		    <img  class="col-5 float-start therapy-img img-left" src="images/imanes.jpg" alt="imanes-pic">
+		    <h1 class="subtitle">CONSULTA MÉDICA INTEGRAL</h1>
+		    <p>
+		    Es la consulta de primera vez donde se lleva a cabo una historia.
+		    <br>
+		    clínica completa utilizando métodos diagnósticos 
+		    convencionales y alternativos como el escaneo 
+		    bioenergético para poder integrar un diagnóstico y
+		    ofrecer un plan de tratamiento adecuado siempre al paciente. 
+		    </p>
 		</div>
 
-		<div class="row description" id="acupuntura">
-		    <div class="col-6">
-			<h1 class="subtitle">ACUPUNTURA</h1>
-			<p>
-			Parte de la Medicina Tradicional China que consiste 
-			en la inserción de agujas muy finas en puntos 
-			específicos del cuerpo (llamados puntos de acupuntura)
-			</p>
-		    </div>
-		    <div class="col-6">
-			<img class="therapy-img" src="images/hojas.jpeg" alt="imanes-pic">
-		    </div>
+		<div class="clearfix description" id="acupuntura">
+		    <img class="col-5 float-end therapy-img img-right" src="images/hojas.jpeg" alt="imanes-pic">
+		    <h1 class="subtitle">ACUPUNTURA</h1>
+		    <p>
+		    Parte de la Medicina Tradicional China que consiste 
+		    en la inserción de agujas muy finas en puntos 
+		    específicos del cuerpo (llamados puntos de acupuntura)
+		    </p>
 		</div>
 
-		<div class="row description" id="fa-acupuntura">
-		    <div class="col-6">
-			<img class="therapy-img" src="images/aromaterapia.webp" alt="imanes-pic">
-		    </div>
-		    <div class="col-6">
-			<h1 class="subtitle">FARMACO-ACUPUNTURA</h1>
-			<p>Consiste en la inyección de fármacos principalmente 
-			vitaminas y minerales en los puntos de acupuntura,
-			potencializando la efectividad de ambos tratamientos 
-			provocando una sinergia entre la acupuntura y la medicina.</p>
-		    </div>
+		<div class="clearfix description" id="fa-acupuntura">
+		    <img  class="col-5 float-start therapy-img img-left" src="images/aromaterapia.webp" alt="imanes-pic">
+		    <h1 class="subtitle">FARMACO-ACUPUNTURA</h1>
+		    <p>Consiste en la inyección de fármacos principalmente 
+		    vitaminas y minerales en los puntos de acupuntura,
+		    potencializando la efectividad de ambos tratamientos 
+		    provocando una sinergia entre la acupuntura y la medicina.</p>
 		</div>
-
-		<div class="row description" id="fitoterapia">
-		    <div class="col-6">
-			<h1 class="subtitle">FITOTERAPIA O HERBOLARIA</h1>
-			<p>consiste en la utilización de plantas medicinales 
-			con fines terapéuticos en todas sus formas como en 
-			infusiones, extractos fluidos, extractos secos, 
-			emplastos, pomadas etc.</p>
-		    </div>
-		    <div class="col-6">
-			<img class="therapy-img" src="images/imanes.jpg" alt="imanes-pic">
-		    </div>
-		</div>
-
-		<div class="row description" id="biomagnetismo">
-		    <div class="col-6">
-			<img class="therapy-img" src="images/hojas.jpeg" alt="imanes-pic">
-		    </div>
-		    <div class="col-6">
+  
+		<div class="clearfix description" id="fitoterapia">
+		    <img  class="col-5 float-end therapy-img img-right" src="images/imanes.jpg" alt="imanes-pic">
+		    <h1 class="subtitle">FITOTERAPIA O HERBOLARIA</h1>
+		    <p>consiste en la utilización de plantas medicinales 
+		    con fines terapéuticos en todas sus formas como en 
+		    infusiones, extractos fluidos, extractos secos, 
+		    emplastos, pomadas etc.</p>
+		</div>  
+  
+		<div class="clearfix description" id="biomagnetismo">
+		    <img  class="col-5 float-start therapy-img img-left" src="images/hojas.jpeg" alt="imanes-pic">
 			<h1 class="subtitle">BIOMAGNETISMO Y MAGNETOTERAPIA</h1>
 			<p>Consiste en la utilización de imanes en diferentes
 			partes del cuerpo, y lo que se busca es restaurar el 
@@ -168,11 +144,10 @@
 			hongos. Así mismo aumenta el flujo sanguíneo por
 			consiguiente también la oxigenación propiciando el 
 			buen funcionamiento de los órganos.</p>
-		    </div>
 		</div>
 
-		<div class="row description" id="bioenergetica">
-		    <div class="col-6">
+		<div class="clearfix description" id="bioenergetica">
+		    <img  class="col-5 float-end therapy-img img-right" src="images/imanes.jpg" alt="imanes-pic">
 			<h1 class="subtitle">BIOENERGÉTICA</h1>
 			<p>Se refiere a las interacciones de la energía 
 			dentro de los seres a nivel atómico, molecular,
@@ -183,64 +158,52 @@
 			mental, emocional y espiritual. Para ello se hace 
 			uso de terapias como la acupuntura, biomagnetismo,
 			reiki, entre otras.</p>
-		    </div>
-		    <div class="col-6">
-			<img class="therapy-img" src="images/imanes.jpg" alt="imanes-pic">
-		    </div>
 		</div>
 
-		<div class="row description" id="masoterapia">
-		    <div class="col-6">
-			<img class="therapy-img" src="images/aromaterapia.webp" alt="imanes-pic">
-		    </div>
-		    <div class="col-6">
-			<h1 class="subtitle">MASOTERAPIA</h1>
-			<p>Masajes terapéuticos con técnicas  diversas.
-			<br>
-			<br>
-			Reflexología podal: Tomando en cuenta que en nuestros 
-			pies se representa todo el cuerpo, y masajeando ciertas 
-			zonas podemos tratar ese órgano afectado.
-			<br>
-			Piedras calientes: masaje corporal con piedras de obsidiana. 
-			<br>
-			Masajes con Bambú: masaje relajante y descontracturante con palos de bambú. 
-			<br>
-			Masaje Reductivo: ayuda a eliminar el cúmulo de grasa 
-			localizada y estilizar el contorno de la figura. </p>
-		    </div>
+		<div class="clearfix description" id="masoterapia">
+		    <img  class="col-5 float-start therapy-img img-left" src="images/aromaterapia.webp" alt="imanes-pic">
+		    <h1 class="subtitle">MASOTERAPIA</h1>
+		    <p>
+		    Masajes terapéuticos con técnicas  diversas.
+		    <br>
+		    Reflexología podal: Tomando en cuenta que en nuestros 
+		    pies se representa todo el cuerpo, y masajeando ciertas 
+		    zonas podemos tratar ese órgano afectado.
+		    <br>
+		    Piedras calientes: masaje corporal con piedras de obsidiana. 
+		    <br>
+		    Masajes con Bambú: masaje relajante y descontracturante con palos de bambú. 
+		    <br>
+		    Masaje Reductivo: ayuda a eliminar el cúmulo de grasa 
+		    localizada y estilizar el contorno de la figura. </p>
+		    </p>
 		</div>
 
-		<div class="row description" id="reiki">
-		    <div class="col-6">
-			<h1 class="subtitle">REIKI</h1>
-			<p>Es una terapia bioenergética donde se utiliza 
-			la imposición de manos, con el fin de desbloquear 
-			los canales energéticos causantes de las molestias y 
-			dolores del cuerpo. Restableciendo así la armonía del cuerpo.</p>
-		    </div>
-		    <div class="col-6">
-			<img class="therapy-img" src="images/hojas.jpeg" alt="imanes-pic">
-		    </div>
+		<div class="clearfix description" id="reiki">
+		    <img class="col-5 float-end therapy-img img-right" src="images/hojas.jpeg" alt="imanes-pic">
+		    <h1 class="subtitle">REIKI</h1>
+		    <p>Es una terapia bioenergética donde se utiliza 
+		    la imposición de manos, con el fin de desbloquear 
+		    los canales energéticos causantes de las molestias y 
+		    dolores del cuerpo. Restableciendo así la armonía del cuerpo.</p>
 		</div>
-
 	    </div>
 	</div>	
 
 	<!-- footer -->
 	<div id="footer">
-	    <div class="general-description">
+	    <div>
 		<h1 class="subtitle">AGENDA TU CITA</h1>
 
 		<!-- Email Button  -->
 		<a target="_blank" rel="noopener noreferrer" class="btn btn-success" 
-	           href="mailto:espipinosachiuemilio@outlook.es">
+							     href="mailto:espipinosachiuemilio@outlook.es">
 		    <i class="fa-solid fa-envelope"></i> Correo
 		</a>
 
 		<!-- Whatsapp Button  -->
 		<a target="_blank" rel="noopener noreferrer" class="btn btn-success" 
-	           href="https://wa.me/525630400917">
+							     href="https://wa.me/525630400917">
 		    <i class="fa-brands fa-whatsapp"></i> whatsapp
 		</a>
 	    </div>

@@ -26,12 +26,13 @@ nav {
 }
 
 .dropdown-menu {
-    background:transparent;
+    background: #94B4A4;
+    --bs-dropdown-link-active-bg: none;
 }
 
 /* top */
 #top-container{
-    padding: 150px 0;
+    padding: 100px 0 130px 0;
     background-color: #94B4A4;
 }
 
@@ -42,7 +43,7 @@ nav {
 }
 
 #title {
-    font-size: 3.5em;
+    font-size: 3em;
     display: block;
 
     position: relative;
@@ -88,13 +89,23 @@ nav {
 }
 
 #profile {
-    width: 250px;
-    height: 250px;
+    width: 30%;
     border-radius: 50%;
 }
 
 .hide {
     display: none;
+}
+
+/* top container resposive */
+@media only screen and (max-width: 768px) {
+    #title-div {
+	text-align: center;
+	width: 70%
+    }
+    #profile {
+	width: 45%;
+    }
 }
 
 /* mid-container */
@@ -119,15 +130,32 @@ nav {
 }
 
 .description {
-    padding: 25px 0;
+    padding: 15px 0;
 }
 
 .therapy-img {
-    width: 100%;
+    width: 40%;
+}
+
+.img-right {
+    padding-left: 15px;
+}
+
+.img-left {
+    padding-right: 15px;
+}
+
+/* mid container resposive */
+@media only screen and (max-width: 768px) {
+    .general-description {
+	width: 70%
+    }
 }
 
 /* footer */
 #footer {
     background-color: #94B4A4;
     padding: 45px;
+    margin: auto;
+    text-align: center;
 }
